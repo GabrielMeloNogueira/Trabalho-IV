@@ -28,3 +28,4 @@ jobs:
 
       - name: Executar frontend e testes Cypress
         run: npx start-server-and-test "npm start" http://localhost:8080 "npm test"
+        # workflow do frontend
