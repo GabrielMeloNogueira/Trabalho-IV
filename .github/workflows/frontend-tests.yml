@@ -21,10 +21,10 @@ jobs:
       - name: Configurar Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
 
       - name: Instalar dependências
         run: npm install
 
       - name: Executar frontend e testes Cypress
-        run: npx start-server-and-test start http://localhost:8080 test
+        run: npx start-server-and-test "npm start" http://localhost:8080 "npm test"
