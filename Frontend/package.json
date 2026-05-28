@@ -1,0 +1,14 @@
+{
+  "name": "frontend-tarefas",
+  "version": "1.0.0",
+  "description": "Frontend com HTML, CSS, JavaScript e Cypress",
+  "scripts": {
+    "start": "npx http-server -p 8080",
+    "test": "cypress run"
+  },
+  "devDependencies": {
+    "cypress": "^13.17.0",
+    "http-server": "^14.1.1",
+    "start-server-and-test": "^2.0.8"
+  }
+}

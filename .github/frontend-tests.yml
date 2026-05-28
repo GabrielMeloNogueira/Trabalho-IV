@@ -1,0 +1,30 @@
+name: Testes do Frontend
+
+on:
+  push:
+    paths:
+      - "Frontend/**"
+      - ".github/workflows/frontend-tests.yml"
+
+jobs:
+  frontend-tests:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: Frontend
+
+    steps:
+      - name: Baixar código do repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Instalar dependências
+        run: npm install
+
+      - name: Executar frontend e testes Cypress
+        run: npx start-server-and-test start http://localhost:8080 test

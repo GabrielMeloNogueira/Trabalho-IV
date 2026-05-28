@@ -1,0 +1,19 @@
+{
+  "name": "backend-tarefas",
+  "version": "1.0.0",
+  "description": "Backend com ExpressJS e Cypress",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "cypress run"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.3"
+  },
+  "devDependencies": {
+    "cypress": "^13.17.0",
+    "start-server-and-test": "^2.0.8"
+  }
+  
+}
